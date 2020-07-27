@@ -74,7 +74,7 @@ Inside: `/fabrik-templates/service` we create .js and .spec.js
 - FABRIK_NAME_SLUGIFIED
 
 
-#####Example ts
+##### Example ts
 
 ```ts
 import { Injectable } from '@angular/core';
@@ -87,7 +87,7 @@ export class FABRIK_NAME_FIRST_LETTER_CAPITALIZED {
 }
 ```
 
-#####Example spec.ts
+##### Example spec.ts
 
 ```ts
 import { TestBed } from '@angular/core/testing';
@@ -108,13 +108,13 @@ describe('FABRIK_NAME_FIRST_LETTER_CAPITALIZED', () => {
 });
 ```
 
-####Example command and output
+#### Example command and output
 
 Given the above configuration, and we run the following command `fabrik productState --type service` the output would look as following:
 
 
 
-#####Example output product-state.ts
+##### Example output product-state.ts
 
 ```ts
 import { Injectable } from '@angular/core';
@@ -127,7 +127,7 @@ export class ProductState {
 }
 ```
 
-#####Example output product-state.spec.ts
+##### Example output product-state.spec.ts
 
 ```ts
 import { TestBed } from '@angular/core/testing';
