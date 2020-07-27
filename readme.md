@@ -73,19 +73,33 @@ Inside: `/fabrik-templates/service` we create .js and .spec.js
 - FABRIK_NAME_LOWER
 - FABRIK_NAME_SLUGIFIED
 
-######Example spec.js
 
-```js
+#####Example ts
+
+```ts
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class FABRIK_NAME_FIRST_LETTER_CAPITALIZED {
+  constructor() {}
+}
+```
+
+#####Example spec.ts
+
+```ts
 import { TestBed } from '@angular/core/testing';
 
-import { {{nameFirstLetterCapitalized}} } from './{{ nameSlugified }}';
+import { FABRIK_NAME_FIRST_LETTER_CAPITALIZED } from './FABRIK_NAME_SLUGIFIED';
 
-describe('{{nameFirstLetterCapitalized}}', () => {
-  let service: {{nameFirstLetterCapitalized}};
+describe('FABRIK_NAME_FIRST_LETTER_CAPITALIZED', () => {
+  let service: FABRIK_NAME_FIRST_LETTER_CAPITALIZED;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject({{nameFirstLetterCapitalized}});
+    service = TestBed.inject(FABRIK_NAME_FIRST_LETTER_CAPITALIZED);
   });
 
   it('should be created', () => {
@@ -94,26 +108,28 @@ describe('{{nameFirstLetterCapitalized}}', () => {
 });
 ```
 
-######Example js
+####Example command and output
 
-```js
+Given the above configuration, and we run the following command `fabrik productState --type service` the output would look as following:
+
+
+
+#####Example output product-state.ts
+
+```ts
 import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root',
 })
-export class {{nameFirstLetterCapitalized}} {
+export class ProductState {
   constructor() {}
 }
 ```
 
-#####Example command and output
+#####Example output product-state.spec.ts
 
-Given the above configuration, and we run the following command `fabrik productState --type service` the output would look as following:
-
-######Example output product-state.spec.js
-
-```js
+```ts
 import { TestBed } from '@angular/core/testing';
 
 import { ProductState } from './product-state';
@@ -131,17 +147,4 @@ describe('ProductState', () => {
   });
 });
 
-```
-
-######Example output product-state.js
-
-```js
-import { Injectable } from '@angular/core';
-
-@Injectable({
-  providedIn: 'root',
-})
-export class ProductState {
-  constructor() {}
-}
 ```
