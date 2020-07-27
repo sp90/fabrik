@@ -1,0 +1,48 @@
+{
+  "name": "fabrik",
+  "version": "1.0.0-beta.1",
+  "description": "Fabrik is a cli to scaffold anything",
+  "license": "MIT",
+  "repository": "sp90/fabrik",
+  "author": {
+    "name": "Simon Dragsbæk",
+    "email": "simon@nomis.dk",
+    "url": "https://nomis.dk"
+  },
+  "bin": {
+    "fabrik": "./cli.js",
+    "fa": "./cli.js"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "keywords": [
+    "cli",
+    "cli-app",
+    "fabrik",
+    "scaffold",
+    "scaffolding",
+    "construct",
+    "boilerplate",
+    "builder",
+    "fabrik",
+    "factory"
+  ],
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "glob": "^7.1.6",
+    "lodash": "^4.17.19",
+    "meow": "^5.0.0"
+  },
+  "devDependencies": {
+    "ava": "^2.1.0",
+    "execa": "^2.0.0",
+    "xo": "^0.24.0"
+  }
+}
