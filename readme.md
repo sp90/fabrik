@@ -1,4 +1,4 @@
-# fabrik [![Build Status](https://travis-ci.org/sp90/fabrik.svg?branch=master)](https://travis-ci.org/sp90/fabrik)
+# fabrik [![Build Status](https://travis-ci.org/sp90/fabrik.svg?branch=master)](https://travis-ci.org/sp90/fabrik) ![Node.js Package](https://github.com/sp90/fabrik/workflows/Node.js%20Package/badge.svg)
 
 > Fabrik is a cli to scaffold anything
 
