@@ -1,6 +1,6 @@
 {
   "name": "fabrik",
-  "version": "1.0.0-rc1",
+  "version": "1.0.0-rc2",
   "description": "Fabrik is a cli to scaffold anything",
   "license": "MIT",
   "repository": "sp90/fabrik",
@@ -36,13 +36,13 @@
     "factory"
   ],
   "dependencies": {
-    "chalk": "^4.1.0",
-    "glob": "^7.1.6",
-    "lodash": "^4.17.19",
-    "meow": "^5.0.0"
+    "chalk": "^5.0.0",
+    "glob": "^7.2.0",
+    "lodash": "^4.17.21",
+    "meow": "^10.1.2"
   },
   "devDependencies": {
-    "ava": "^2.1.0",
+    "ava": "^2.4.0",
     "execa": "^2.0.0",
     "xo": "^0.24.0"
   }
