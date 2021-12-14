@@ -1,6 +1,6 @@
 {
   "name": "fabrik",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-rc1",
   "description": "Fabrik is a cli to scaffold anything",
   "license": "MIT",
   "repository": "sp90/fabrik",
